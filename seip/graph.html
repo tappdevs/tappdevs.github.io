@@ -1,0 +1,138 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages: ["corechart", "bar"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var trainee_data = google.visualization.arrayToDataTable([
+      ['Association', 'Number'],
+      ['AEOSIB', 7238],
+      ['BACCO', 5785],
+      ['BACI', 13110],
+      ['BASIS', 22129],
+      ['BBSME', 10884],
+      ['BEIOA', 8354],
+      ['BGMEA', 39930],
+      ['BIGM', 123],
+      ['BITAC', 3275],
+      ['BKMEA', 23249],
+      ['BMET', 34059],
+      ['BRTC', 4358],
+      ['BTMA', 31500],
+      ['BWCCI', 1000],
+      ['DTE', 10598],
+      ['LFMEAB', 4860],
+      ['PKSF', 10011],
+      ['Uttoron', 642],
+      ['AEOSIB', 7238],
+    ]);
+    var training_data = google.visualization.arrayToDataTable([
+      ['Gender', 'Number'],
+      ['Male', 7238],
+      ['Female', 5785],
+    ]);
+    var training_range_data = google.visualization.arrayToDataTable([
+      ['Division', 'Range'],
+      ['Barishal', 13650],
+      ['Chittagong', 43299],
+      ['Dhaka', 73352],
+      ['Khulna', 22436],
+      ['Mymensingh', 23125],
+      ['Rajshahi', 31312],
+      ['Rangpur', 31825],
+      ['Sylhet', 10606],
+    ]);
+    /*var training_certification_data = google.visualization.arrayToDataTable([
+      ['Trainee', 'Number'],
+      ['Enrolled', 7238],
+      ['Girls', 5785],
+    ]);*/
+
+
+    var trainee_options = {
+      title: 'Across Industry: 32,32,323',
+      is3D: true,
+      pieSliceText: 'label',
+      slices: {
+        4: {offset: 0.2},
+        12: {offset: 0.3},
+        14: {offset: 0.4},
+        15: {offset: 0.5},
+      },
+    };
+    var training_options = {
+      title: 'Total Enrolled:3,25,487',
+      pieHole: 0.4,
+      pieSliceText: 'label',
+    };
+    var training_range_options = {
+      title: 'Area Covered: Over 8 division',
+      pieSliceText: 'label',
+    };
+    /*var training_certification_options = {
+      title: 'Training Range',
+      pieSliceText: 'label',
+    };*/
+
+
+    var chart_trainee = new google.visualization.PieChart(document.getElementById('total_trainee'));
+    var chart_training = new google.visualization.PieChart(document.getElementById('total_training'));
+    var chart_training_range = new google.visualization.PieChart(document.getElementById('training_range'));
+    //var chart_training_certification = new google.visualization.PieChart(document.getElementById('training_range'));
+
+    chart_trainee.draw(trainee_data, trainee_options);
+    chart_training.draw(training_data, training_options);
+    chart_training_range.draw(training_range_data, training_range_options);
+    //chart_training_certification.draw(training_certification_data, training_certification_options);
+
+
+    var training_certification = document.getElementById('training_certification');
+
+    var training_certification_data = google.visualization.arrayToDataTable([
+      ['Association', 'Enrolled', 'Certified'],
+      ['AEOSIB', 6058, 3031],
+      ['BACCO', 5785, 5645],
+      ['BACI', 13110, 12700],
+      ['BASIS', 22129, 23.3],
+      ['BBSME', 10884, 23.3],
+      ['BEIOA', 8354, 23.3],
+      ['BGMEA', 39930, 23.3],
+      ['BIGM', 123, 23.3],
+      ['BITAC', 3275, 23.3],
+      ['BKMEA', 23249, 23.3],
+      ['BMET', 34059, 23.3],
+      ['BRTC', 4358, 23.3],
+      ['BTMA', 31500, 23.3],
+      ['BWCCI', 1000, 23.3],
+      ['DTE', 10598, 23.3],
+      ['LFMEAB', 4860, 23.3],
+      ['PKSF', 10011, 23.3],
+      ['Uttoron', 642, 23.3],
+    ]);
+
+    var materialOptions = {
+      width: 1140,
+      legend: {position: 'none'},
+      chart: {
+        title: 'Training Performance',
+        subtitle: 'The result of all association'
+      },
+      series: {
+        0: {axis: 'amount'}, // Bind series 0 to an axis named 'distance'.
+        1: {axis: 'association'} // Bind series 1 to an axis named 'brightness'.
+      },
+      axes: {
+        y: {
+          amount: {label: 'Amount of trainee'}, // Left y-axis.
+          association: {label: 'Association'} // Right y-axis.
+        }
+      }
+    };
+
+
+    var materialChart = new google.charts.Bar(training_certification);
+    materialChart.draw(training_certification_data, google.charts.Bar.convertOptions(materialOptions));
+
+
+  }
+</script>
