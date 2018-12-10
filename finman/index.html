@@ -12,6 +12,7 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animated-header.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -53,7 +54,7 @@
         <i class="fas fa-bars text-info"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto align-items-center">
           <li class="nav-item">
             <a class="nav-link" href="#cloud-space">Finman Cloud Space</a>
           </li>
@@ -66,87 +67,259 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item position-relative">
+            <button class="btn btn-success btn-sm">Login</button>
+            <div class="login-form shadow p-4 text-secondary bg-white position-absolute float-right">
+              <p class="mb-2 font-weight-semibold">Please enter your finman-cloud ID</p>
+              <form class="form-inline align-items-center justify-content-between no-gutters mb-2" id="login-form">
+                <label class="mr-2">https://</label>
+                <div class="col">
+                  <input type="text" name="subdomain" class="form-control mr-sm-2 form-control-sm"
+                         placeholder="Finman ID">
+                </div>
+                <label class="mx-2">.finman-cloud.com</label>
+                <button type="submit" class="btn-sm btn-info btn">GO</button>
+              </form>
+              <div class="form-msg mb-2 line-height-1 text-danger bg-light px-2 py-1">
+                The Finman ID contains invalid characters. Hyphens cannot be the first or last character.
+              </div>
+              <small><a href="#"><i class="fas fa-comment-dots text-success"></i> What is a Finman ID?</a></small>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+  <header class="text-white py-5" style="background-image:url(images/office.jpg)">
+    <div class="container text-center py-5">
+      <div class="display-3 h1">Cloud Based Double Entry</div>
+      <div class="cd-headline clip is-full-width display-5">
+        <span class="cd-words-wrapper">
+				<b class="is-visible">Accounting</b>
+				<b class="is-hidden">System</b>
+			</span>
+      </div>
     </div>
   </header>
 
-  <section id="cloud-space">
+  <section id="cloud-space" class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so
-            you
-            can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
-        </div>
+      <div class="text-center">
+        <h2>A software that works as hard as you do</h2>
+        <p class="lead mb-3">
+          ✔ Simple, reliable, and secure ✔ Easily manage cash flow ✔ Access online any time
+        </p>
+        <img src="images/cloud-space.png" alt="cloud">
       </div>
     </div>
   </section>
   <section id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so
-            you
-            can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="display-5">Organized and stress-free</div>
+          <p class="lead">
+            Wave makes accounting as simple as possible.
+          </p>
+        </div>
+        <div class="row py-4 align-items-center">
+          <div class="col-lg-6">
+            <h3 class="display-6 my-3">Keep track of your business health</h3>
+            <p class="lead">Have an eye on the big picture so you can make better business decisions. Our robust reports
+              are easy to use and show month-to-month or year-to-year comparisons so you can easily identify cash flow
+              trends.</p>
+            <a href="#" class="badge badge-danger">more <i class="fas fa-long-arrow-alt-right ml-1"></i></a>
+          </div>
+          <div class="col">
+            <img src="images/track.jpg" alt="track">
+          </div>
+        </div>
+        <div class="row py-4 align-items-center">
+          <div class="col">
+            <img src="images/collaborate.jpg" alt="collaborate">
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-6 my-3">Collaborate with ease</h3>
+            <p class="lead">Invite the people you trust—including business partners, assistants, and accounting
+              professionals—to collaborate with you on your business. You control the access.</p>
+            <a href="#" class="badge badge-danger">more <i class="fas fa-long-arrow-alt-right ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="display-5">Easy and intuitive</div>
+          <p class="lead">
+            We designed Wave for small business owners. No jargon, just easy software that makes sense.
+          </p>
+        </div>
+        <div class="row py-4">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-start mb-3">
+              <div class="number px-3 py-2 h2 text-secondary bg-light mr-3 my-1 rounded">
+                1
+              </div>
+              <div class="">
+                <div class="display-6 mb-2">Get started in seconds</div>
+                <p class="lead">After creating your account, everything's set up so you can get started right away.
+                  Access it anywhere, any time. Your data is always available, and it’s backed up for extra peace of
+                  mind.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <div class="number px-3 py-2 h2 text-secondary bg-light mr-3 my-1 rounded">
+                2
+              </div>
+              <div class="">
+                <div class="display-6 mb-2">Automatic reports</div>
+                <p class="lead">Get all the reports you need to run your business better: profit & loss statements,
+                  sales tax reports, balance sheets, and more.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <div class="number px-3 py-2 h2 text-secondary bg-light mr-3 my-1 rounded">
+                3
+              </div>
+              <div class="">
+                <div class="display-6 mb-2">Accountant-friendly software</div>
+                <p class="lead">Wave uses real, double-entry accounting, to save time for your accountant and help them
+                  do their job best.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/easy.jpg" alt="easy">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="reports" class="bg-light">
+  <section id="reports" class="py-5 bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita
-            quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore
-            ut
-            velit dignissimos.</p>
+      <div class="text-center mb-5">
+        <div class="display-5">Reports</div>
+        <p class="lead">
+          Our report cover of most of the accounting. No hassle understand. It's clear and easy to understand.
+        </p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-clipboard-list fa-3x"></i>
+          <h3 class="display-6 my-3">Balance Sheet</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-certificate fa-3x"></i>
+          <h3 class="display-6 my-3">Income Statement</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-business-time fa-3x"></i>
+          <h3 class="display-6 my-3">Profit & Loss</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-hand-holding-usd fa-3x"></i>
+          <h3 class="display-6 my-3">Trial Balance</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-clipboard-list fa-3x"></i>
+          <h3 class="display-6 my-3">Balance Sheet</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-clipboard-list fa-3x"></i>
+          <h3 class="display-6 my-3">Income Statement</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-clipboard-list fa-3x"></i>
+          <h3 class="display-6 my-3">Profit & Loss</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <i class="fas fa-clipboard-list fa-3x"></i>
+          <h3 class="display-6 my-3">Trial Balance</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, inventore, similique. Adipisci
+            alias cum cupiditate</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
+  <section id="contact" class="py-5">
+    <div class="container py-3">
+      <h2 class="display-5 text-center pb-5">Contact Us</h2>
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor,
-            provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa
-            exercitationem,
-            in, quo totam.</p>
+        <div class="col-lg-6">
+          <form>
+            <div class="form-group">
+              <label for="contact_name">Name</label>
+              <input type="text" class="form-control" id="contact_name" placeholder="Your name">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact_email">Email</label>
+                <input type="email" class="form-control" id="contact_email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact_mobile">Mobile</label>
+                <input type="password" class="form-control" id="contact_mobile" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact_message">Message</label>
+              <textarea type="text" class="form-control" id="contact_message" placeholder="Type your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send <i class="far fa-comments ml-1"></i></button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116780.57731326342!2d90.37013689999999!3d23.840173100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1544362059888" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  <footer class="bg-light">
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="display-6 mb-4">Quick links</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Our Company</a></li>
+            <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+            <li class="list-inline-item"><a href="#">Work With Us</a></li>
+            <li class="list-inline-item"><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="display-6 mb-4">Follow Us</h4>
+          <div class="social">
+            <a href="#" class="mr-2" style="color:#3b5998"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="#" class="mr-2" style="color:#1da1f2"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="#" class="mr-2" style="color:#0077b5"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="mr-2" style="color:#ea4335"><i class="fab fa-google-plus-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-3">
+      <p class="m-0 text-center text-white">Copyright &copy; 2018 Finman Cloud. All right reserved. </p>
     </div>
     <!-- /.container -->
   </footer>
@@ -156,13 +329,11 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
 <!-- Custom JavaScript for this theme -->
 <script src="js/scrolling-nav.js"></script>
-
+<script src="js/animated-header.js"></script>
 <script src="js/finman-script.js"></script>
 
 

@@ -1,13 +1,34 @@
 
 /*common*/
+*{border-radius:0!important;}
+img{max-width:100%;}
 body{padding-top:120px;transition:all .3s;}
 nav.navbar{height:120px;transition:all .3s;}
 nav .navbar-brand img{height:80px;transition:all .3s;}
 .sticky nav .navbar-brand img{height:56px;}
 .sticky nav.navbar{height:60px;}
 .sticky body{padding-top:60px;}
+.font-weight-semibold {
+  font-weight: 600!important;
+}
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus,
+.btn-info.focus, .btn-info:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .show>.btn-success.dropdown-toggle:focus,
+.btn-success.focus, .btn-success:focus,
+.form-control:focus{box-shadow:none;}
+.line-height-1{line-height:1;}
+.display-5 {font-size: 2.5rem;font-weight: 300;line-height: 1;}
+.display-6 {font-size: 1.8rem;font-weight: 300;line-height: 1;}
+header{background-size:cover;background-position:center center;}
 /*header*/
 header{}
+.navbar-nav .nav-link{color:#333;}
+.navbar-nav .nav-link.active{color:#007bff;}
+nav.navbar .login-form {right:0;width:400px;visibility:hidden;opacity:0;transition:all .3s;top:120%;}
+nav.navbar .show.login-form {visibility:visible;opacity:1;top:100%;}
+nav.navbar .login-form input[type=text]{width:inherit;}
+.form-msg{display:none;}
+.form-msg.show{display:block;}
 /*banner*/
 /*content*/
 /*footer*/
@@ -16,7 +37,6 @@ header{}
 .sticky .move_top{bottom:30px;visibility:visible;opacity:1;}
 
 
-section{min-height:500px;}
 
 
 
@@ -38,24 +58,11 @@ section{min-height:500px;}
 body {
   transition: background-color .5s;
 }
-.offcanvas2 {
-  display: none;
-  height: 100%;
-  width: 250px;
-  background-color: #111;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 3;
-  overflow-x: hidden;
-  transition: .5s;
-  padding-top: 60px;
-}
 .offcanvas {
   height: 100%;
-  width: 0;
+  width: 300px;
   top: 0;
-  left: 0;
+  right: 100%;
   background-color: #111;
   position: fixed;
   z-index: 999999;
