@@ -53,10 +53,10 @@
             <li><a href="#">Team</a></li>
           </ul>
         </li>
-        <li><a href="#">Statistics</a></li>
+        <li><a href="statistics.html" class="active">Statistics</a></li>
         <li><a href="#">Resource</a></li>
         <li><a href="notices.html">Notices</a></li>
-        <li><a href="admission-circular.html" class="active">Admission Circular</a></li>
+        <li><a href="admission-circular.html">Admission Circular</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">TMS</a></li>
         <li><a href="#">SEIP Graduate</a></li>
@@ -108,10 +108,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="our-works.html">Our Works</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="statistics.html" class="active">Statistics</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="notices.html">Notices</a></li>
-            <li><a href="admission-circular.html" class="active">Admission Circular</a></li>
+            <li><a href="admission-circular.html">Admission Circular</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#">TMS</a></li>
             <li><a href="seip-graduate.html">SEIP Graduate</a></li>
@@ -126,14 +126,418 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-white p-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Admission Circular</li>
+              <li class="breadcrumb-item active" aria-current="page">Training Statistics</li>
             </ol>
           </nav>
 
-          <h1 class="mb-4">Statistics</h1>
+          <div class="d-flex justify-content-between">
+            <h1 class="mb-4">Training Statistics <small>(As of 02 December, 2018 02:30 PM)</small></h1>
+            <div class="card-header-right">
+              <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i></button>
+              <button type="button" class="btn btn-warning btn-sm text-white"><i class="far fa-file-pdf"></i></button>
+              <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-print"></i></button>
+            </div>
+          </div>
           <div class="content">
+            <div class="card">
+              <div class="card-body2">
+                <table class="table table-sm table-responsive-sm table-bordered table-striped mb-0" id="stats_data_table">
+                  <thead>
+                  <tr class="theader">
+                    <th class="text-center align-middle">SL.</th>
+                    <th width="13.5%" class="align-middle">Association</th>
+                    <th width="13.5%" class="text-center align-middle">Total Target</th>
+                    <th width="13.5%" class="text-center align-middle">Enrollment</th>
+                    <th width="13.5%" class="text-center align-middle">No. of Female Trainees</th>
+                    <th width="13.5%" class="text-center align-middle">Certification</th>
+                    <th width="13.5%" class="text-center align-middle">Job Placement</th>
+                    <th width="13.5%" class="text-center align-middle">% of Job Placement</th>
+                  </tr>
+                  </thead>
+                  <tbody id="stats_data_1">
+                  <tr>
+                    <td colspan="8"><b>Tranche 1</b></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td><a target="_blank" href="/CourseSummary/MjY=/1">AEOSIB</a></td>
+                    <td class="text-center">7,565</td>
+                    <td class="text-center">7,328</td>
+                    <td class="text-center">298</td>
+                    <td class="text-center">4,981</td>
+                    <td class="text-center">3,337</td>
+                    <td class="text-center">67</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td><a target="_blank" href="/CourseSummary/Mjg=/1">BACCO</a></td>
+                    <td class="text-center">5,785</td>
+                    <td class="text-center">5,785</td>
+                    <td class="text-center">1,964</td>
+                    <td class="text-center">5,645</td>
+                    <td class="text-center">3,747</td>
+                    <td class="text-center">66</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td><a target="_blank" href="/CourseSummary/NQ==/1">BACI</a></td>
+                    <td class="text-center">13,110</td>
+                    <td class="text-center">13,110</td>
+                    <td class="text-center">1,075</td>
+                    <td class="text-center">12,700</td>
+                    <td class="text-center">9,957</td>
+                    <td class="text-center">78</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">4</td>
+                    <td><a target="_blank" href="/CourseSummary/NA==/1">BASIS</a></td>
+                    <td class="text-center">23,000</td>
+                    <td class="text-center">22,840</td>
+                    <td class="text-center">3,445</td>
+                    <td class="text-center">20,817</td>
+                    <td class="text-center">12,150</td>
+                    <td class="text-center">58</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">5</td>
+                    <td><a target="_blank" href="/CourseSummary/MTU=/1">BBSME</a></td>
+                    <td class="text-center">10,200</td>
+                    <td class="text-center">10,884</td>
+                    <td class="text-center">3,367</td>
+                    <td class="text-center">10,563</td>
+                    <td class="text-center">6,158</td>
+                    <td class="text-center">58</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">6</td>
+                    <td><a target="_blank" href="/CourseSummary/OA==/1">BEIOA</a></td>
+                    <td class="text-center">8,340</td>
+                    <td class="text-center">8,354</td>
+                    <td class="text-center">94</td>
+                    <td class="text-center">8,185</td>
+                    <td class="text-center">6,910</td>
+                    <td class="text-center">84</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">7</td>
+                    <td><a target="_blank" href="/CourseSummary/Nw==/1">BGMEA</a></td>
+                    <td class="text-center">42,315</td>
+                    <td class="text-center">39,930</td>
+                    <td class="text-center">24,803</td>
+                    <td class="text-center">37,506</td>
+                    <td class="text-center">26,134</td>
+                    <td class="text-center">70</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">8</td>
+                    <td><a target="_blank" href="/CourseSummary/MzM=/1">BIGM</a></td>
+                    <td class="text-center">375</td>
+                    <td class="text-center">123</td>
+                    <td class="text-center">36</td>
+                    <td class="text-center">85</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">9</td>
+                    <td><a target="_blank" href="/CourseSummary/MTk=/1">BITAC</a></td>
+                    <td class="text-center">3,240</td>
+                    <td class="text-center">3,275</td>
+                    <td class="text-center">438</td>
+                    <td class="text-center">2,894</td>
+                    <td class="text-center">2,244</td>
+                    <td class="text-center">78</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">10</td>
+                    <td><a target="_blank" href="/CourseSummary/Ng==/1">BKMEA</a></td>
+                    <td class="text-center">23,971</td>
+                    <td class="text-center">23,494</td>
+                    <td class="text-center">9,172</td>
+                    <td class="text-center">21,881</td>
+                    <td class="text-center">18,982</td>
+                    <td class="text-center">87</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">11</td>
+                    <td><a target="_blank" href="/CourseSummary/MjI=/1">BMET</a></td>
+                    <td class="text-center">34,140</td>
+                    <td class="text-center">34,059</td>
+                    <td class="text-center">8,747</td>
+                    <td class="text-center">30,441</td>
+                    <td class="text-center">22,313</td>
+                    <td class="text-center">73</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">12</td>
+                    <td><a target="_blank" href="/CourseSummary/MzQ=/1">BRTC</a></td>
+                    <td class="text-center">22,800</td>
+                    <td class="text-center">4,608</td>
+                    <td class="text-center">136</td>
+                    <td class="text-center">892</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">13</td>
+                    <td><a target="_blank" href="/CourseSummary/OQ==/1">BTMA</a></td>
+                    <td class="text-center">30,960</td>
+                    <td class="text-center">31,500</td>
+                    <td class="text-center">11,794</td>
+                    <td class="text-center">30,707</td>
+                    <td class="text-center">28,684</td>
+                    <td class="text-center">93</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">14</td>
+                    <td><a target="_blank" href="/CourseSummary/MzA=/1">BWCCI</a></td>
+                    <td class="text-center">1,000</td>
+                    <td class="text-center">1,000</td>
+                    <td class="text-center">1,000</td>
+                    <td class="text-center">986</td>
+                    <td class="text-center">659</td>
+                    <td class="text-center">67</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">15</td>
+                    <td><a target="_blank" href="/CourseSummary/MjE=/1">DTE</a></td>
+                    <td class="text-center">10,800</td>
+                    <td class="text-center">10,598</td>
+                    <td class="text-center">3,368</td>
+                    <td class="text-center">8,482</td>
+                    <td class="text-center">5,236</td>
+                    <td class="text-center">62</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">16</td>
+                    <td><a target="_blank" href="/CourseSummary/Mjc=/1">LFMEAB</a></td>
+                    <td class="text-center">4,860</td>
+                    <td class="text-center">4,860</td>
+                    <td class="text-center">2,708</td>
+                    <td class="text-center">4,592</td>
+                    <td class="text-center">4,394</td>
+                    <td class="text-center">96</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">17</td>
+                    <td><a target="_blank" href="/CourseSummary/MjU=/1">PKSF</a></td>
+                    <td class="text-center">10,000</td>
+                    <td class="text-center">10,011</td>
+                    <td class="text-center">1,608</td>
+                    <td class="text-center">9,882</td>
+                    <td class="text-center">7,689</td>
+                    <td class="text-center">78</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">18</td>
+                    <td><a target="_blank" href="/CourseSummary/Mjk=/1">Uttoron</a></td>
+                    <td class="text-center">706</td>
+                    <td class="text-center">642</td>
+                    <td class="text-center">72</td>
+                    <td class="text-center">517</td>
+                    <td class="text-center">364</td>
+                    <td class="text-center">70</td>
+                  </tr>
+                  <tr class="table_footer">
+                    <td colspan="2"><b>Total</b></td>
+                    <td class="text-center"><b>253,167</b></td>
+                    <td class="text-center"><b>232,401</b></td>
+                    <td class="text-center"><b>74,125</b></td>
+                    <td class="text-center"><b>211,756</b></td>
+                    <td class="text-center"><b>158,958</b></td>
+                    <td class="text-center"><b>75.07</b></td>
+                  </tr>
+                  </tbody>
 
+                  <tbody id="stats_data_2">
+                  <tr>
+                    <td colspan="8"><b>Tranche 2</b></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td><a target="_blank" href="/CourseSummary/Mjg=/2">BACCO</a></td>
+                    <td class="text-center">11,000</td>
+                    <td class="text-center">3,103</td>
+                    <td class="text-center">1,255</td>
+                    <td class="text-center">1,927</td>
+                    <td class="text-center">819</td>
+                    <td class="text-center">43</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td><a target="_blank" href="/CourseSummary/NQ==/2">BACI</a></td>
+                    <td class="text-center">17,225</td>
+                    <td class="text-center">6,481</td>
+                    <td class="text-center">783</td>
+                    <td class="text-center">4,536</td>
+                    <td class="text-center">3,471</td>
+                    <td class="text-center">77</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td><a target="_blank" href="/CourseSummary/MzI=/2">BAPA</a></td>
+                    <td class="text-center">11,000</td>
+                    <td class="text-center">6,390</td>
+                    <td class="text-center">3,153</td>
+                    <td class="text-center">5,299</td>
+                    <td class="text-center">5,283</td>
+                    <td class="text-center">100</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">4</td>
+                    <td><a target="_blank" href="/CourseSummary/OA==/2">BEIOA</a></td>
+                    <td class="text-center">10,660</td>
+                    <td class="text-center">925</td>
+                    <td class="text-center">36</td>
+                    <td class="text-center">434</td>
+                    <td class="text-center">200</td>
+                    <td class="text-center">46</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">5</td>
+                    <td><a target="_blank" href="/CourseSummary/Nw==/2">BGMEA</a></td>
+                    <td class="text-center">25,740</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">6</td>
+                    <td><a target="_blank" href="/CourseSummary/MTk=/2">BITAC</a></td>
+                    <td class="text-center">3,600</td>
+                    <td class="text-center">327</td>
+                    <td class="text-center">38</td>
+                    <td class="text-center">74</td>
+                    <td class="text-center">36</td>
+                    <td class="text-center">49</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">7</td>
+                    <td><a target="_blank" href="/CourseSummary/MjI=/2">BMET</a></td>
+                    <td class="text-center">51,600</td>
+                    <td class="text-center">14,382</td>
+                    <td class="text-center">3,433</td>
+                    <td class="text-center">7,848</td>
+                    <td class="text-center">3,672</td>
+                    <td class="text-center">47</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">8</td>
+                    <td><a target="_blank" href="/CourseSummary/OQ==/2">BTMA</a></td>
+                    <td class="text-center">13,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">9</td>
+                    <td><a target="_blank" href="/CourseSummary/MjE=/2">DTE</a></td>
+                    <td class="text-center">9,720</td>
+                    <td class="text-center">3,221</td>
+                    <td class="text-center">1,198</td>
+                    <td class="text-center">1,008</td>
+                    <td class="text-center">393</td>
+                    <td class="text-center">39</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">10</td>
+                    <td><a target="_blank" href="/CourseSummary/Mzk=/2">EDCBRACU</a></td>
+                    <td class="text-center">450</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">11</td>
+                    <td><a target="_blank" href="/CourseSummary/MzY=/2">EDCBUTEX</a></td>
+                    <td class="text-center">540</td>
+                    <td class="text-center">150</td>
+                    <td class="text-center">13</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">12</td>
+                    <td><a target="_blank" href="/CourseSummary/Mzc=/2">EDCSEIPEWU</a></td>
+                    <td class="text-center">300</td>
+                    <td class="text-center">122</td>
+                    <td class="text-center">18</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">13</td>
+                    <td><a target="_blank" href="/CourseSummary/MzE=/2">ISC TH</a></td>
+                    <td class="text-center">4,000</td>
+                    <td class="text-center">2,009</td>
+                    <td class="text-center">351</td>
+                    <td class="text-center">1,420</td>
+                    <td class="text-center">910</td>
+                    <td class="text-center">64</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">14</td>
+                    <td><a target="_blank" href="/CourseSummary/Mjc=/2">LFMEAB</a></td>
+                    <td class="text-center">10,140</td>
+                    <td class="text-center">1,783</td>
+                    <td class="text-center">1,158</td>
+                    <td class="text-center">1,183</td>
+                    <td class="text-center">996</td>
+                    <td class="text-center">84</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">15</td>
+                    <td><a target="_blank" href="/CourseSummary/MjU=/2">PKSF</a></td>
+                    <td class="text-center">12,000</td>
+                    <td class="text-center">1,328</td>
+                    <td class="text-center">179</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">16</td>
+                    <td><a target="_blank" href="/CourseSummary/Mzg=/2">REHAB</a></td>
+                    <td class="text-center">5,000</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr class="table_footer">
+                    <td colspan="2"><b>Total</b></td>
+                    <td class="text-center"><b>185,975</b></td>
+                    <td class="text-center"><b>40,221</b></td>
+                    <td class="text-center"><b>11,615</b></td>
+                    <td class="text-center"><b>23,729</b></td>
+                    <td class="text-center"><b>15,780</b></td>
+                    <td class="text-center"><b>66.50</b></td>
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr class="table_footer_final">
+                    <td colspan="2"><b>Total for Tranche 1 & 2</b></td>
+                    <td class="text-center"><b>439,142</b></td>
+                    <td class="text-center"><b>272,622</b></td>
+                    <td class="text-center"><b>85,740</b></td>
+                    <td class="text-center"><b>235,485</b></td>
+                    <td class="text-center"><b>174,738</b></td>
+                    <td class="text-center"><b>74.20</b></td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
 
+            </div>
 
           </div>
         </div>
@@ -158,8 +562,9 @@
 
           <div class="socials">
             <span class="mr-2">Follow Us: </span>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
 

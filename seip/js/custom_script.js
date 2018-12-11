@@ -3,7 +3,9 @@
   $('.search-wrap button').click(function (e) {
     e.stopPropagation();
     $(this).parents('.search-wrap').toggleClass('show');
-    setTimeout(function() { $('.search-wrap input').focus(); }, 100);
+    setTimeout(function () {
+      $('.search-wrap input').focus();
+    }, 100);
   });
   
   $('.search-wrap input').click(function (e) {
@@ -13,6 +15,12 @@
   $(document).on('click', function (e) {
     $('.search-wrap').removeClass('show');
   })
+  
+  if ($('select').length) {
+    $('select').select2({
+      width: '100%'
+    });
+  }
   
   
 })(jQuery)

@@ -12,6 +12,7 @@ img{max-width:100%;height:auto}
 .display-6{font-size:1.5rem; line-height:1; }
 .fs-16{font-size:16px;}
 .fa-2-5x{font-size:2.5em;}
+.font-weight-semibold,.fw-600,.fw-semibold{font-weight:600;}
 /*list-icon-1*/
 .list-icon-check{padding-left:0;list-style:none;}
 .list-icon-check li{padding-left:20px;position:relative;margin-bottom:5px;}
@@ -32,11 +33,14 @@ header div.logo, header div.logo img{height:100%;}
 .search-wrap input:focus{width:200px;}
 .search-wrap.show input{visibility:visible;opacity:1;width:200px;}
 /*header-content*/
-.header-content{max-width:400px;background:#00000099;}
+.header-content{max-width:620px;background:#00000099;}
 .header-content p{margin-bottom:0;}
 .bg-primary-tr{background-color:#007bffaa !important;}
 .bg-success-tr{background-color:#28a745aa !important}
 .bg-warning-tr{background-color:#ffc107aa !important;}
+.bg-secondary-tr{background-color:#6c757daa !important;}
+.bg-danger-tr{background-color:#dc3545aa !important;}
+.bg-info-tr{background-color:#17a2b8aa !important;}
 .btn-yellow{
   color:#333;
   background-color:yellow;
@@ -95,6 +99,7 @@ nav.main-nav ul li a.active, nav.main-nav ul li a:hover{background:#f7f7f7;}
 .ticker-container{overflow:hidden;height:30px;}
 .banner-wrap{position:absolute;width:100%;height:100%;left:0;top:0;}
 /*content*/
+.content-wrap{}
 /*sidebar*/
 .sidebar-nav ul{list-style:none;padding-left:0;}
 .sidebar-nav ul li{}
@@ -130,6 +135,11 @@ footer a:hover{}
 .list-sm a{padding:.4rem 1.25rem;}
 .card-header{background:green;color:#fff;}
 .card-header h5{font-weight:600;}
+
+.nav-item {position:relative;}
+.nav-item a:after{content:'';width:0;height:0;position:absolute;bottom:0;left:0;border-bottom:1px solid #524fa1;transition:all .3s;right:0;margin:auto;}
+.nav-item a.active,.nav-item a:hover{color:#524fa1;}
+.nav-item a.active:after,.nav-item a:hover:after{width:100%;}
 /*amchart*/
 .total_trainee{
   width:100%;
@@ -141,5 +151,24 @@ footer a:hover{}
 .card-mystic .card-header{padding:.5rem;background:rgba(194, 195, 185, 0.26);color:#333;font-size:26px;font-weight:300;}
 .card-mystic .list-group-item:first-child{font-weight:300;font-size:24px;}
 .card-mystic .list-group-item{border-color:#eee;padding:.5rem 0;}
+/*select2*/
+.select2-container--default .select2-selection--single .select2-selection__rendered{line-height:inherit;}
+.select2-container--default .select2-selection--single .select2-selection__arrow{height:100%;}
+.select2-dropdown{border-radius:.25rem;}
+.select2-container .select2-selection--single{height:auto;}
+.select2-container--default .select2-selection--single{
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 
