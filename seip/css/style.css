@@ -107,7 +107,7 @@ nav.main-nav ul li a.active, nav.main-nav ul li a:hover{background:#f7f7f7;}
 .sidebar-nav ul li a:hover{text-decoration:none;}
 .sidebar-nav{
   position:fixed;
-  margin-top:14px;
+  margin-top:18px;
   width:175px;
 }
 .sidebar-nav ul ul {background-color:#ddd;display:none;}
