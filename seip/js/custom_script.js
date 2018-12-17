@@ -10,7 +10,7 @@
       onSliderLoad: function () {
         setTimeout(function () {
           $('.slider > div').eq(1).find('.banner-content .text-slide-1').addClass('show animated fadeInDown');
-        }, 2000);
+        }, 20);
         setTimeout(function () {
           $('.slider > div').eq(1).find('.banner-content .text-slide-1').removeClass('show animated fadeInDown');
           $('.slider > div').eq(1).find('.banner-content .text-slide-2').addClass('show animated fadeInUp');
@@ -23,7 +23,7 @@
       onSlideNext: function () {
         setTimeout(function () {
           $('.slider .banner-content .text-slide-1').addClass('show animated fadeInDown');
-        }, 2000);
+        }, 20);
         setTimeout(function () {
           $('.slider .banner-content .text-slide-1').removeClass('show animated fadeInDown');
           $('.slider .banner-content .text-slide-2').addClass('show animated fadeInUp');
@@ -32,7 +32,7 @@
       onSlidePrev: function () {
         setTimeout(function () {
           $('.slider .banner-content .text-slide-1').addClass('show animated fadeInDown');
-        }, 2000);
+        }, 20);
         setTimeout(function () {
           $('.slider .banner-content .text-slide-1').removeClass('show animated fadeInDown');
           $('.slider .banner-content .text-slide-2').addClass('show animated fadeInUp');

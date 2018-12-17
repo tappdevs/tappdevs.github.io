@@ -110,6 +110,9 @@ nav.main-nav ul li a.active, nav.main-nav ul li a:hover{background:#f7f7f7;}
   margin-top:14px;
   width:175px;
 }
+.sidebar-nav ul ul {background-color:#ddd;display:none;}
+.sidebar-nav ul ul li a{padding-left:30px;}
+
 /*footer*/
 footer{position:fixed;bottom:0;width:100%;}
 footer a{color:#ccc;}
