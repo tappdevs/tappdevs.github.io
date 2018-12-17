@@ -3,30 +3,41 @@
   
   if ($('.slider').length) {
     $('.slider').bxSlider({
-      onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
-        console.log(currentSlideHtmlObject);
-        // $('.active-slide').removeClass('active-slide');
-        $('.slider > div').eq(currentSlideHtmlObject + 1).find('.banner-content').addClass('show animated fadeIn')
-      },
+      pause: 12000,
+      controls: false,
+      pager: false,
+      auto: true,
       onSliderLoad: function () {
-        $('.slider > div').eq(1).find('.banner-content').addClass('show animated fadeIn')
+        setTimeout(function () {
+          $('.slider > div').eq(1).find('.banner-content .text-slide-1').addClass('show animated fadeInDown');
+        }, 2000);
+        setTimeout(function () {
+          $('.slider > div').eq(1).find('.banner-content .text-slide-1').removeClass('show animated fadeInDown');
+          $('.slider > div').eq(1).find('.banner-content .text-slide-2').addClass('show animated fadeInUp');
+        }, 8000);
       },
-      onSlideBefore: function ($slideElement, oldIndex, newIndex) {
-        $slideElement.find('.banner-content').addClass('show animated fadeIn')
-        $('.slider > div').eq(oldIndex).find('.banner-content').removeClass('show animated fadeIn')
-      }
-      
-      /*onSliderLoad:function (currentIndex) {
-        console.log();
-        setTimeout(function(){
-          $('.banner-content').addClass('show animated fadeIn').removeClass('fadeOut');
-        }, 3000);
+      onSlideBefore: function () {
+        $('.slider .banner-content div').removeClass('show animated fadeInDown');
+        $('.slider .banner-content div').removeClass('show animated fadeInUp');
       },
-      onSlideAfter:function (e) {
-        setTimeout(function(){
-          $('.banner-content').addClass('show animated bounceInLeft').removeClass('fadeOut');
-        }, 3000);
-      },*/
+      onSlideNext: function () {
+        setTimeout(function () {
+          $('.slider .banner-content .text-slide-1').addClass('show animated fadeInDown');
+        }, 2000);
+        setTimeout(function () {
+          $('.slider .banner-content .text-slide-1').removeClass('show animated fadeInDown');
+          $('.slider .banner-content .text-slide-2').addClass('show animated fadeInUp');
+        }, 6000);
+      },
+      onSlidePrev: function () {
+        setTimeout(function () {
+          $('.slider .banner-content .text-slide-1').addClass('show animated fadeInDown');
+        }, 2000);
+        setTimeout(function () {
+          $('.slider .banner-content .text-slide-1').removeClass('show animated fadeInDown');
+          $('.slider .banner-content .text-slide-2').addClass('show animated fadeInUp');
+        }, 6000);
+      },
       
     });
   }
