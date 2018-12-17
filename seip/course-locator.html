@@ -127,17 +127,17 @@
       <div class="col-sm-12 col-lg-10">
         <div class="content-area">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-white p-0">
+            <ol class="breadcrumb bg-white p-0 mb-2">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Training Statistics</li>
             </ol>
           </nav>
 
-          <h1 class="mb-4">Course Locator</h1>
-          <div class="course-locator bg-light p-3 mb-4 shadow-sm">
+          <h1 class="mb-2">Course Locator</h1>
+          <div class="course-locator bg-light px-3 pb-3 pt-2 mb-4 shadow-sm">
             <form action="">
               <div class="row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-2">
                   <label for="sector_name">Sector name</label>
                   <select class="form-control" id="sector_name">
                     <option>Garment</option>
@@ -146,34 +146,16 @@
                     <option>Office Management</option>
                   </select>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-2">
                   <label for="course_name">Course name</label>
                   <select class="form-control" id="course_name">
-                    <option>Garment</option>
-                    <option>IT/Telecommunication</option>
+                    <option>Swing</option>
+                    <option>Graphics Design</option>
                     <option>Driving</option>
                     <option>Office Management</option>
                   </select>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <label for="training_partner">Training Partner</label>
-                  <select class="form-control" id="training_partner">
-                    <option>BGMEA</option>
-                    <option>BASIS</option>
-                    <option>BACI</option>
-                    <option>BITAC</option>
-                  </select>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label for="training_institute">Training Institute</label>
-                  <select class="form-control" id="training_institute">
-                    <option>BGMEA</option>
-                    <option>BASIS</option>
-                    <option>BACI</option>
-                    <option>BITAC</option>
-                  </select>
-                </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-2">
                   <label for="location">Location</label>
                   <select class="form-control" id="location">
                     <option>Dhaka</option>
@@ -182,21 +164,38 @@
                     <option>Comilla</option>
                   </select>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <label for="tentative_training_start_date">Tentative training start date</label>
-                  <select class="form-control" id="tentative_training_start_date">
+                <div class="col-md-4 mb-2">
+                  <label for="training_partner">Training Partner</label>
+                  <select class="form-control" id="training_partner">
                     <option>BGMEA</option>
                     <option>BASIS</option>
                     <option>BACI</option>
                     <option>BITAC</option>
                   </select>
                 </div>
-                <div class="col-md-12 ">
+                <div class="col-md-4 mb-2">
+                  <label for="training_institute">Training Institute</label>
+                  <select class="form-control" id="training_institute">
+                    <option>BGMEA</option>
+                    <option>BASIS</option>
+                    <option>BACI</option>
+                    <option>BITAC</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-2">
                   <label for="tentative_training_start_date">Tentative training start date</label>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Type to search courses">
+                  <select class="form-control" id="tentative_training_start_date">
+                    <option>Within 1 month</option>
+                    <option>Within 3 months</option>
+                    <option>Within 6 months</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="tentative_training_start_date">Tentative training start date</label>
+                  <div class="input-group mb-0">
+                    <input type="text" class="form-control form-control-sm" placeholder="Type to search courses">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-info" type="button" id="button-addon2">
+                      <button class="btn btn-outline-info btn-sm" type="button" id="button-addon2">
                         <i class="fas fa-search"></i>
                       </button>
                     </div>
@@ -210,151 +209,186 @@
             <div class="row">
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
-                      <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">TAPPWARE Solutions Limited</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
-                      <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">WinWin Service Provider</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
-                      <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">Trenza Software</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
                       <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
-                      <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">TAPPWARE Solutions Limited</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card bg-light shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-truncate">
-                      <a href="#">Web Development with php</a>
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">WinWin Service Provider</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
                       <i class="far fa-calendar-alt"></i> January 2nd, 2019
                     </h6>
-                    <p class="card-text">
-                      Skills for Employment Investment Program (SEIP), <br> Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
                       <br> Eskaton Garden, Dhaka-1000.
                     </p>
-                    <a href="#" class="badge badge-info">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      <p class="mb-0">Md. Rahman Sadik</p>
-                      <small>Senior Instructor, It Executive</small>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fas fa-phone-square text-primary"></i>  02-9121212, 01912451547</li>
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card bg-light shadow-sm">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">Trenza Software</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
+                      <i class="far fa-calendar-alt"></i> January 2nd, 2019
+                    </h6>
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                      <br> Eskaton Garden, Dhaka-1000.
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-2"><div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card bg-light shadow-sm">
+                  <div class="card-body p-2">
+                    <h6 class="card-title text-truncate fw-semibold">
+                      <a href="#">Web Development with php</a>
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-info">
+                      <i class="far fa-calendar-alt"></i> January 2nd, 2019
+                    </h6>
+                    <p class="card-text mb-0">
+                      Probashi Kalyan Bhaban (Level-16), 71-72 Old Elephant Road,
+                      <br> Eskaton Garden, Dhaka-1000.
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-2">
+                      <div class="line-height-12">
+                        <p class="mb-0">Md. Rahman Sadik</p>
+                        <small>Senior Instructor, It Executive</small>
+                      </div>
+                      <p class="mb-0"><i class="fas fa-phone-square text-primary mr-1"></i>  02-9121212, 01912451547</p></li>
                   </ul>
                 </div>
               </div>
@@ -371,14 +405,14 @@
   <div class="footer-before bg-dark text-white">
     <div class="container">
       <div class="row align-items-center py-1">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <div class="footer-link"><a href="#">Privacy Policy</a> <a href="#">FAQ</a> <a href="#">Sitemap</a></div>
           <p class="mb-0">Skills For Employment Investment Program &copy; 2018</p>
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col  text-center">
           <p class="mb-0">This site has been visited 159271</p>
         </div>
-        <div class="col-sm-4 row justify-content-end">
+        <div class="col  row justify-content-end">
 
           <div class="socials">
             <span class="mr-2">Follow Us: </span>

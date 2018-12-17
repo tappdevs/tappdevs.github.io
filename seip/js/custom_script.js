@@ -59,7 +59,7 @@
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  if (scroll >= 10) {
+  if (scroll >= 100) {
     $('body').addClass('sticky')
   } else {
     $('body').removeClass('sticky')
