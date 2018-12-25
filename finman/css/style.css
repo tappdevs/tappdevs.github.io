@@ -32,8 +32,8 @@ nav.navbar .login-form input[type=text]{width:inherit;}
 /*banner*/
 /*content*/
 /*footer*/
-.move_top{position:fixed;right:20px;bottom:0;transition:all .3s;z-index:9;border:1px solid #00000033;visibility:hidden;opacity:0;background-color:#f8f9fa;}
-.move_top:hover{background-color:#d8d9da;}
+.move_top{position:fixed;right:20px;bottom:0;transition:all .3s;z-index:9;border:1px solid #00000033;visibility:hidden;opacity:0;background-color:#f8f9fa;border-radius:10px!important;font-size:1.33333em;}
+.move_top:hover{background-color:#d8d9da;border-radius:0!important;font-size:1.5em;}
 .sticky .move_top{bottom:30px;visibility:visible;opacity:1;}
 
 
