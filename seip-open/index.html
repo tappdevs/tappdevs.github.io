@@ -29,7 +29,7 @@
 			CounDown({
 				urlToRedirect: "http://tms.seip-fd.gov.bd/",
 				
-				secondsColor : "#2FA832",
+				secondsColor : "#00b48b",
 				secondsGlow  : "none",
 				
 				minutesColor : "#9cdb7d",
@@ -52,23 +52,22 @@
 	</style>
 </head>
 <body>
-<div id="open" style="position: absolute; top: 0px; background: #2FA832; width: 100%; height: 100%;">
+<div id="open" style="position: absolute; top: 0px; background: #00b48b; width: 100%; height: 100%;">
 	<!--h1 style="margin: 100px 0px  20px 0px;">:: SEIP TMS Mobile Application ::</h1-->
-	<div id="initial_cirlce" class="ch-item ch-img-2" style="width: 220px; height: 220px; margin: 80px auto 0;">
+	<div id="initial_cirlce" class="ch-item ch-img-2" style="width: 500px; height: 178px; margin: 80px auto 0;">
 		<div class="ch-info" style="position: static;" onclick=" run();">
 			<h3>Open</h3>
 		</div>
 	</div>
 	<div id="countdownText" style="width: 850px; margin: 0 auto; color: #ffffff; text-align: center;">
 		<p class="solaimanlipi" style="text-align: center;">
-			<span style="font-weight: bold; font-size: 40px;"> Skills for Employment Investment Program</span><br/>
-			<span style="font-weight: bold; font-size: 38px;"> Inauguration of TMS Mobile Application</span><br/>
-			<span style="font-weight: bold; color: red; font-size: 44px;"><span class="inline">Mr. Jalal Ahmed</span></span><br/>
-			<span style="font-weight: bold; font-size: 34px;">Executive Project Director</span><br/>
-			<span style="font-weight: bold; font-size: 34px;">27 December 2018</span><br/>
-		</p>
-		<p>
-			 Click on the logo to Open
+			<span style="font-size: 40px;font-weight:bold;color:#5350a1;"> Skills for Employment Investment Program</span><br/>
+			<span style="display:block;margin-top:10px;font-size: 30px;"> Inauguration of</span>
+			<span style="font-size: 38px;background: #5350a1; display:inline-block;margin-bottom:10px;padding: 1px 20px;margin:25px 0;">TMS Mobile Application</span>
+			<br/>
+			<span style="font-weight: bold; font-size: 40px;"><span class="inline">Mr. Jalal Ahmed</span></span><br/>
+			<span style="font-size: 22px;display:block;margin:5px 0;color:#025e49;font-weight:100;">Executive Project Director
+			<br>	27 December 2018</span><br/>
 		</p>
 	</div>
 	<div class="clock" style="width: 240px; height: 240px; margin: 150px auto; display: none;">
@@ -77,7 +76,7 @@
 			<div class="bgLayer">
 				<div class="topLayer">
 				</div>
-				<canvas id="canvas_days" width="188" height="188">
+				<canvas id="canvas_days" width="188" height="188" style="display: none;">
 				</canvas>
 				<div class="text">
 					<p class="val">
