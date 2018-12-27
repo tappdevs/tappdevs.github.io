@@ -112,7 +112,7 @@ function CounDown(settings) {
 							{
 								window.location = glob.urlToRedirect;
 							}, 2000);
-
+              
                        }
                         return;
                         
