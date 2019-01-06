@@ -27,7 +27,7 @@ header{transition:all .3s;}
 .inner header{height:50px;background-image:url(../images/banner.jpg);background-size:cover;transition:all .3s;}
 .inner.stickys header{height:50px;}
 header .partners img{height:40px;}
-.header-top{background:rgba(0, 0, 0, .80);padding:5px 0;position:fixed;width:100%;z-index:999;}
+.header-top{background:#524fa1;padding:5px 0;position:fixed;width:100%;z-index:999;}
 :not(.inner) header{background-image:url(../images/banner.jpg);background-size:cover;transition:all .3s;position: relative;z-index: 9;}
 header .logo{height:50px;}
 header div.logo, header div.logo img{height:100%;}
@@ -128,7 +128,7 @@ footer a:hover{color:#fff;}
 .footer-before .socials a{color:#fff;font-size:14px;margin-left:5px;}
 .footer-middle{background:#555;color:#fff;}
 /*copyright*/
-.footer-before, .copyright{background:#111;}
+.footer-before, .copyright{background:#524fa1;}
 /*team-member*/
 .team-member{margin-bottom:30px;border:1px solid #eee;transition:all .3s;}
 .team-member:hover{background:#f9f9f9;}
