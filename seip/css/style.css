@@ -24,11 +24,11 @@ img{max-width:100%;height:auto}
 /*header*/
 header *{transition:all .3s;}
 header{transition:all .3s;}
-.inner header{height:50px;background-image:url(../images/banner.jpg);background-size:cover;transition:all .3s;}
+.inner header{height:50px;transition:all .3s;}
 .inner.stickys header{height:50px;}
 header .partners img{height:40px;}
 .header-top{background:#524fa1;padding:5px 0;position:fixed;width:100%;z-index:999;}
-:not(.inner) header{background-image:url(../images/banner.jpg);background-size:cover;transition:all .3s;position: relative;z-index: 9;}
+:not(.inner) header{transition:all .3s;position: relative;z-index: 9;}
 header .logo{height:50px;}
 header div.logo, header div.logo img{height:100%;}
 .search .input-group{width:200px;}
