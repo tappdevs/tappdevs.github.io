@@ -1,10 +1,14 @@
 (function ($) {
     $(function () {
-        $('.jcarousel').jcarousel({
+        $('.banner .jcarousel').jcarousel({
+            wrap: 'circular'
+        })
+
+        $('.mukto_path .jcarousel').jcarousel({
             wrap: 'circular'
         })
             .jcarouselAutoscroll({
-                interval: 3000,
+                interval: 9000,
                 target: '+=1',
                 autostart: true
             })
