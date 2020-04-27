@@ -18,6 +18,21 @@ img {
     max-width: 100%
 }
 
+.bw-2 {
+    border-width: 2px;
+}
+.bw-3 {
+    border-width: 3px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
 a:hover {
     color: #f13d08;
     text-decoration: none;
@@ -51,8 +66,14 @@ a:hover {
     border-radius: 0;
     border: none;
 }
-.jcarousel{margin-bottom: -6px}
-.banner .jcarousel{margin-bottom: 0}
+
+.jcarousel {
+    margin-bottom: -6px
+}
+
+.banner .jcarousel {
+    margin-bottom: 0
+}
 
 .news-ticker a {
     display: block;
@@ -81,4 +102,23 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.featured-title span {
+    margin-top: -14px;
+}
+
+.jctkr-wrapper ul li {
+    font-family: SolaimanLipi, sans-serif;
+}
+.text-gradient{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#32d2ff+0,e389ff+100 */
+    background: #32d2ff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #32d2ff 0%, #e389ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #32d2ff 0%,#e389ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #32d2ff 0%,#e389ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32d2ff', endColorstr='#e389ff',GradientType=1 ); /* IE6-9 */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

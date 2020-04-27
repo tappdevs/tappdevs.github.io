@@ -1,8 +1,5 @@
 (function ($) {
     $(function () {
-        $('.banner .jcarousel').jcarousel({
-            wrap: 'circular'
-        })
 
         $('.mukto_path .jcarousel').jcarousel({
             wrap: 'circular'

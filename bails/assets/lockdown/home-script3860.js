@@ -1,0 +1,2 @@
+(function(){var $summaryContainer=$("#lockdown-summary-data-container");function renderLocationSummary(data){for(var i=0;i<3;i++){for(var j=0;j<4;j++){$summaryContainer.find('.lock_down_type_'+i+' .location_type_'+j).html(data[i][j])}}}
+$.get($summaryContainer.data('url'),{"_":$.now(),translate:$('.lang-bn').length>0},function(data){renderLocationSummary(data);});}());
