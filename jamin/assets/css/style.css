@@ -75,6 +75,15 @@ a:hover {
 .banner .jcarousel {
     margin-bottom: 0
 }
+.banner li{
+    background: url("../img/banner-bg.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.banner li img{
+    max-height: 500px;
+    opacity: .8;
+}
 
 .news-ticker a {
     display: block;
