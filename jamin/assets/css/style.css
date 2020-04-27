@@ -33,15 +33,18 @@ img {
 .fs-18 {
     font-size: 18px;
 }
+
 .fs-20 {
     font-size: 20px;
 }
-.btn-group-lg>.btn, .btn-xlg {
+
+.btn-group-lg > .btn, .btn-xlg {
     padding: .6rem 1.2rem;
     font-size: 1.5rem;
     line-height: 1.7;
     border-radius: .3rem;
 }
+
 a:hover {
     color: #f13d08;
     text-decoration: none;
@@ -83,12 +86,14 @@ a:hover {
 .banner .jcarousel {
     margin-bottom: 0
 }
-.banner li{
+
+.banner li {
     background: url("../img/banner-bg.jpg");
     background-size: cover;
     text-align: center;
 }
-.banner li img{
+
+.banner li img {
     max-height: 407px;
     opacity: .8;
 }
@@ -148,4 +153,21 @@ a:hover {
 
 .text-shadow {
     text-shadow: 0 0 .5px #000, 0 0 .5px #000;
+}
+
+
+.fadeInFromNone {
+    -webkit-animation: fadeInFromNone 0.5s infinite;
+    -moz-animation: fadeInFromNone 0.5s infinite;
+    -o-animation: fadeInFromNone 0.5s infinite;
+    animation: fadeInFromNone 0.5s infinite;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
