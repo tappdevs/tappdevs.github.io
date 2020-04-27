@@ -1,9 +1,31 @@
 (function ($) {
     $(function () {
+        $('.banner .jcarousel').jcarousel({
+            wrap: 'circular'
+        })
+            .on('jcarousel:reload jcarousel:create', function () {
+                var carousel = $(this),
+                    width = carousel.innerWidth();
+
+                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+            })
+            .jcarousel({
+                wrap: 'circular'
+            });
+
 
         $('.mukto_path .jcarousel').jcarousel({
             wrap: 'circular'
         })
+            .on('jcarousel:reload jcarousel:create', function () {
+                var carousel = $(this),
+                    width = carousel.innerWidth();
+
+                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+            })
+            .jcarousel({
+                wrap: 'circular'
+            })
             .jcarouselAutoscroll({
                 interval: 9000,
                 target: '+=1',
