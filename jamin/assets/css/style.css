@@ -74,6 +74,17 @@ a:hover {
     left: 10px;
 }
 
+.banner .jcarousel-control-next, .banner .jcarousel-control-prev {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.banner:hover .jcarousel-control-next, .banner:hover .jcarousel-control-prev {
+    visibility: visible;
+    opacity: 1;
+}
+
 .banner .jcarousel-wrapper {
     border-radius: 0;
     border: none;

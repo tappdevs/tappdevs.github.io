@@ -1,0 +1,35 @@
+@media all and (min-width: 991px) {
+    .w-lg-50 {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 1170px) {
+
+    .nav_items {
+        max-width: 100%;
+        left: 0;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .nav_toggler {
+        display: block;
+    }
+
+    .hidden-md {
+        display: none;
+    }
+
+    .banner {
+        background-position: right;
+    }
+
+    .header-left {
+        width: 100%;
+    }
+
+    .nav_menu, .header-right {
+        display: none;
+    }
+}
